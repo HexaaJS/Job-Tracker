@@ -130,7 +130,7 @@ export default function ApplicationForm({ initial, onSubmit, onClose }: Props) {
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-gray-700 mb-1">URL de l'offre</label>
+            <label className="block text-xs font-medium text-gray-700 mb-1">URL</label>
             <input
               type="url"
               value={form.url ?? ''}

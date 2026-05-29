@@ -62,7 +62,7 @@ export default function ApplicationForm({ initial, onSubmit, onClose }: Props) {
                 required
                 value={form.company}
                 onChange={e => set('company', e.target.value)}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-gray-900"
               />
             </div>
             <div>
@@ -71,7 +71,7 @@ export default function ApplicationForm({ initial, onSubmit, onClose }: Props) {
                 required
                 value={form.position}
                 onChange={e => set('position', e.target.value)}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-gray-900"
               />
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function ApplicationForm({ initial, onSubmit, onClose }: Props) {
               <select
                 value={form.status}
                 onChange={e => set('status', e.target.value as ApplicationStatus)}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-gray-900"
               >
                 {STATUTS.map(s => <option key={s} value={s}>{s}</option>)}
               </select>
@@ -93,7 +93,7 @@ export default function ApplicationForm({ initial, onSubmit, onClose }: Props) {
                 value={form.source ?? ''}
                 onChange={e => set('source', e.target.value)}
                 placeholder="LinkedIn, Indeed..."
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-gray-900"
               />
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function ApplicationForm({ initial, onSubmit, onClose }: Props) {
                 type="date"
                 value={form.appliedAt.slice(0, 10)}
                 onChange={e => set('appliedAt', e.target.value)}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-gray-900"
               />
             </div>
             <div>
@@ -114,7 +114,7 @@ export default function ApplicationForm({ initial, onSubmit, onClose }: Props) {
                 type="date"
                 value={form.followUpAt?.slice(0, 10) ?? ''}
                 onChange={e => set('followUpAt', e.target.value || undefined)}
-                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
+                className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-gray-900"
               />
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function ApplicationForm({ initial, onSubmit, onClose }: Props) {
               value={form.location ?? ''}
               onChange={e => set('location', e.target.value)}
               placeholder="Paris, Remote..."
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-gray-900"
             />
           </div>
 
@@ -136,7 +136,7 @@ export default function ApplicationForm({ initial, onSubmit, onClose }: Props) {
               value={form.url ?? ''}
               onChange={e => set('url', e.target.value)}
               placeholder="https://..."
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-gray-900"
             />
           </div>
 
@@ -146,7 +146,7 @@ export default function ApplicationForm({ initial, onSubmit, onClose }: Props) {
               value={form.notes ?? ''}
               onChange={e => set('notes', e.target.value)}
               rows={3}
-              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 resize-none"
+              className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-gray-900 resize-none"
             />
           </div>
 
